@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LW_9</title>
+    <link rel="stylesheet"  type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <main>
+      <div class="calculator">
+        <div class="display" id="display"><span id="first_num"></span><span id="operation"></span><span id="second_num">0</span></div>
+        <div class="buttons">
+          <button id="btn_7" onclick="digits_numbers('7')">7</button>
+          <button id="btn_8" onclick="digits_numbers('8')">8</button>
+          <button id="btn_9" onclick="digits_numbers('9')">9</button>
+          <button id="btn_div" onclick="setOperation('/')">/</button>
+          <button id="btn_clear" onclick="clearAll()">C</button>
+
+          <button id="btn_4" onclick="digits_numbers('4')">4</button>
+          <button id="btn_5" onclick="digits_numbers('5')">5</button>
+          <button id="btn_6" onclick="digits_numbers('6')">6</button>
+          <button id="btn_mult" onclick="setOperation('*')">*</button>
+          <button id="btn_remove" onclick="removeNum()">&larr;</button>
+
+          <button id="btn_1" onclick="digits_numbers('1')">1</button>
+          <button id="btn_2" onclick="digits_numbers('2')">2</button>
+          <button id="btn_3" onclick="digits_numbers('3')">3</button>
+          <button id="btn_minus" onclick="setOperation('-')">-</button>
+          <button class="rowspan" id="btn_equal" onclick="calculate()">=</button>
+
+          <button class="colspan" id="btn_0" onclick="digits_numbers('0')">0</button>
+          <button id="btn_dot" onclick="addDot()">.</button>
+          <button id="btn_plus" onclick="setOperation('+')">+</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
